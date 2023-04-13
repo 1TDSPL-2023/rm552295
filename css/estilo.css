@@ -18,6 +18,10 @@
     width: 60%;
     height: 100%;
     flex-wrap: wrap;
-    
+}
 
+.cabecalho img{
+    width: 30%;
+    max-width: 30%;
+    
 }
