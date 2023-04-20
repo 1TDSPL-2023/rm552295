@@ -1,26 +1,25 @@
-/* utilizando a diretriz @import url(); */
-@import url(./cabecalho.css);
-@import url(./conteudo.css);
+/* UTILIZANDO A DIRECTIVA @IMPORT() */
+@import url("./cabecalho.css");
+@import url("./conteudo.css");
+@import url("./rodape.css");
+@import url("./break-point-630px.css");
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-  }
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
 
-
-
-  html{
+html{
     font-size: 62.7%;
-  }
+}
 
 .tit-sec{
     text-align: center;
     font-size: 5rem;
 }
 
-
-/* vw = largura
-v = altura */
-
- 
+/* vw = View Width
+vh = View height 
+    
+*/

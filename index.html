@@ -20,6 +20,7 @@
             <a href="#">Item-2</a>
             <a href="#">Item-3</a>
         </nav>
+
     </header>
     <!-- CABEÇALHO -->
 
@@ -64,28 +65,31 @@
             <a href="#"><img src="./img/social-3.png" alt="Logo twitter"></a>
         </nav>
 
-    <div>
-        <form action="" method="get" onsubmit="return false">
-            <fieldset>
-                <legend>Contato</legend>
-                <div>
-                    <label for="idEmail">Email</label>
-                    <input type="email" name="txtEmail" id="idEmail"
-                    required placeholder="Email">
-                </div>
-                <div>
-                    <label for="idNome">Nome</label>
-                    <input type="text" name="txtName" id="idNome" required placeholder="Nome">
-                </div>
-                <div>
-                    <input type="submit" value="Enviar">
-                </div>
-            </fieldset>
-        </form>
-    </div>
+        <div>
+            <form action="/index.html" method="get" onsubmit="return true">
+                <fieldset>
+                    <legend>Contato</legend>
+                    <div>
+                        <label for="idEmail">Email</label>
+                        <input type="email" name="txtEmail" id="idEmail" required placeholder="Email">
+                    </div>
+                    <div>
+                        <label for="idNome">Nome</label>
+                        <input type="text" name="txtNome" id="idNome" required placeholder="Nome">
+                    </div>
+                    <div>
+                        <label for="idGrava">Guardar Dados</label>
+                        <input type="checkbox" name="txtGrava" id="idGrava" required>
+                    </div>
+                    <div>
+                        <input type="submit" value="Enviar">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
     </footer>
     <!-- RODAPÉ -->
-
 </body>
 
 </html>
