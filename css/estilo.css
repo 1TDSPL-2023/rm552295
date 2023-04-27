@@ -19,9 +19,52 @@ html{
     font-size: 5rem;
 }
 
+/* TABELA */
+
+table{
+  /* border-collapse: separate; *//* - separa as linhas*/
+  /* border-collapse: collapse;  *//* - Destrói as linhas*/
+  margin: 5% auto;
+  border-spacing: 0px 8px;
+  /*organiza as linhas e separa por px*/
+}
+
+td, th{
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+tr:nth-child(odd){
+  background-color: #cccccc;
+}
+
+tr:nth-child(1){
+  background-color: #aaaaaa;
+}
+/* para passar parâmetros específicos, podemos usar even, ou odd, para ímpares e pares, ou até mesmo usar números */
+tr:hover{
+  background-color: #1a1616bd;
+  /* para mudar o fundo */
+  color: #ffff;
+  /* color para poder mudar a fonte */
+
+  /* hover serve para quando passar o mouse em cima, mudar a cor */
+}
+
+td[colspan], td[rowspan]{
+  text-align: center;
+
+  /* colchetes implement apenas no atributo que tiver essa modificação */
+}
+  
 
 
-/* hover deixa o mouse diferente quando passa por cima */
+/* TABELA */
+
 
 
 
