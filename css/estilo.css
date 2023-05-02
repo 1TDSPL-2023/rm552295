@@ -1,44 +1,75 @@
+/* UTILIZANDO A DIRECTIVA @IMPORT() */
+@import url("./cabecalho.css");
+@import url("./conteudo.css");
+@import url("./rodape.css");
+@import url("./break-point-630px.css");
+
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-  }
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+    font-size: 62.7%;
+}
+
+.tit-sec{
+    text-align: center;
+    font-size: 5rem;
+}
+
+/* TABELA */
+
+table{
+  /* border-collapse: separate; *//* - separa as linhas*/
+  /* border-collapse: collapse;  *//* - Destrói as linhas*/
+  margin: 5% auto;
+  border-spacing: 0px 8px;
+  /*organiza as linhas e separa por px*/
+}
+
+td, th{
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+tr:nth-child(odd){
+  background-color: #cccccc;
+}
+
+tr:nth-child(1){
+  background-color: #aaaaaa;
+}
+/* para passar parâmetros específicos, podemos usar even, ou odd, para ímpares e pares, ou até mesmo usar números */
+tr:hover{
+  background-color: #1a1616bd;
+  /* para mudar o fundo */
+  color: #ffff;
+  /* color para poder mudar a fonte */
+
+  /* hover serve para quando passar o mouse em cima, mudar a cor */
+}
+
+td[colspan], td[rowspan]{
+  text-align: center;
+
+  /* colchetes implement apenas no atributo que tiver essa modificação */
+}
   
-  .cabecalho{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      background-color: #000000;
-  }
-  
-  .cabecalho nav{
-      display: flex;
-      justify-content: space-around;
-      width: 60%;
-      height: 100%;
-      flex-wrap: wrap;
-  }
-  
-  .cabecalho img{
-      width: 30%;
-      max-width: 30%;
-  }
-  
-  .cabecalho a{
-      text-decoration: none;
-      font-size: 4em;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      font-weight: 700;
-      color: #fff;
-      text-align: center;
-      padding: 20% 0;
-  }
-  
-  /* UTILIZANDO A PSEUDO CLASSE HOVER */
-          .cabecalho a:hover {
-              color: #000000;
-              background-color: #fff;
-  
-          }
-  /* UTILIZANDO A PSEUDO CLASSE HOVER */
+
+
+/* TABELA */
+
+
+
+
+
+/* vw = View Width
+vh = View height 
+    
+*/
