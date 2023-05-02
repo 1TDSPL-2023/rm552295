@@ -2,12 +2,13 @@
 
 @media(max-width:630px){
     .cabecalho{
+      display: flex;
       flex-direction: column;
     }
   
     .cabecalho nav {
       flex-wrap: nowrap;
-      height: auto;
+    
     }
   
     .cabecalho a {
