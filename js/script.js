@@ -1,74 +1,88 @@
 //Atrelando o evento click ao elemento h2
-const h2Element = document.getElementById("titulo");
+// const h2Element = document.getElementById("titulo");
 
-h2Element.addEventListener("click", ()=>{
-    //Math função matemática...
-    //Os metódos floor, round e ceil eles arredondam os números passados.
-    //O método randon retorna um número entre 0 e 1. Ex: 0.1233.
-    let r = "";
-    let g = "";
-    let b = "";
+// h2Element.addEventListener("click", ()=>{
+//     //Math função matemática...
+//     //Os metódos floor, round e ceil eles arredondam os números passados.
+//     //O método randon retorna um número entre 0 e 1. Ex: 0.1233.
+//     let r = "";
+//     let g = "";
+//     let b = "";
 
-    r = Math.round(Math.random()*255);
-    g = Math.round(Math.random()*255);
-    b = Math.round(Math.random()*255);
-    h2Element.textContent = "Novo título";
-    //h2Element.setAttribute("style", "color:rgb(rgb"+r+","+g+","+b+");")
-    h2Element.setAttribute("style", `color:rgb(${r},${g},${b});`)
-});
+//     r =  Math.round(Math.random()*255);
+//     g =  Math.round(Math.random()*255);
+//     b =  Math.round(Math.random()*255);
+    
+   
+//     // h2Element.setAttribute("style","color:rgb("+r+","+g+","+b+");");
+//     h2Element.setAttribute("style",`color:rgb(${r},${g},${b});`);
+//     h2Element.textContent = "NOVO TÍTULO";
+// });
+
+//CONST
+//1ª REGRA - Na declaração você é obrigado a inicializar a constante. 
+//2ª REGRA - É não se pode alterar o conteúdo de uma constante durante o fluxo do programa.
+// const PI = 3.14;
+
+//DIFERENÇA ENTRE VAR/LET
+// var nome = "Mariana";
+
+// if(nome != ""){
+//     let nome = "Leonardo";
+// }
+
+// //QUAL NOME SERÁ IMPRESSO QUANDO NOME FOR ADICIONADO AO LOG?
+// console.log(nome);
+
+// let fruta = "melão";
+// console.log(fruta);
+
+// //ARRAY são Collections
+// let frutas = ["uva","pêra","melância"];
+// console.log(frutas[0]);
+// console.log(frutas[1]);
+// console.log(frutas[2]);
+// console.log("TAMANHO DO ARRAY : " + frutas.length);
+// // let nome = "Leonardo";
+// // console.log(nome[1]);
+
+// //Adicionando um novo elemento no final do array
+// //Utilizando o método push(item);
+// frutas.push("banana");
+// frutas.push("laranja");
+// // console.log(frutas);
+// console.table(frutas);
+
+// //Removendo um item do final do array com o método pop();
+// frutas.pop();
+// console.table(frutas);
+
+// //Removendo um item do início do array com o método shift();
+// frutas.shift();
+// console.table(frutas);
+
+//Adicionando um novo elemento no início do array
+// //Utilizando o método unshift(item);
+// frutas.unshift("maracujá");
+// frutas.unshift("kiwi");
+// // console.log(frutas);
+// console.table(frutas);
 
 
-//DIFERENÇA ENTRE VAR/LET/CONST
-
-//Var desconsidera qualquer escopo, FOR, IF, ELSE, etc... ou seja, o var ignora e vai transformar o nome independente do que aconteça
-var nome1 = "Mariana";
-
-// let respeita o escopo e a ordem.
-if(nome != ""){
-    let nome = "Leonardo";
-}
-
-//A constante não se altera, diferente da variável, daí os nomes.
-//1º regra - não se pode alterar o conteudo de uma constante no fluxo de um programa
-//2º regra - deve-se declarar ai inicializar a constante 
-//const PI = 3.14
-
-
-// mechendo com arrays
-let fruta = "melão";
-console.log(fruta);
-
-
-let frutas = ["uva", "melância", "pêra"];
-console.log(frutas);
-
-//ler a quantidade de itens
-console.log(frutas.length);
-
-//adicionar itens
-frutas.push("banana");
-frutas.push("Laranja");
-console.table(frutas);
-
-//removeer o último item
-frutas.pop();
-console.table(frutas);
-
-//remover o primeiro item
-frutas.shift();
-console.table(frutas);
-
-//adicionar elementos no início do array
-frutas.unshift("kiwi");
-console.table(frutas);
-
-//procurar num índice do array
+//Realizar uma busca de um item no array utiliza o método indexOf(nomeItem);
 // let indice = frutas.indexOf("pêra");
-// console.log(indice);
+// console.log(frutas[indice]);
 
-//Removendo item através do índice do array com método splice(indice, qtd)
-let indice = frutas.indexOf("pêra");
-frutas.splice(indice, 1);
-console.table(frutas);
+//Removendo item através do indicie do array com método splice(indice, qtd)
+// let indice = frutas.indexOf("pêra");
+// frutas.splice(indice,1);
+// console.table(frutas);
 
-//substituindo com replace
+//Iterando arrays
+let frutas = ["uva","laranja","banana","maçã","kiwi","abacate"];
+console.log("MINHAS FRUTAS : " + frutas);
+
+
+frutas.forEach( (fruta)=>{
+    console.log(fruta);
+} );
