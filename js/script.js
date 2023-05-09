@@ -102,13 +102,58 @@
 //     console.log("ITENS DO NOVO ARRAY : " + nr);
 // });
 
-//Converter HTMLElements em Array
-const aElements = document.getElementsByTagName("a");
-console.log(aElements);
-const aElementsArray = [...aElements];
-console.log(aElementsArray);
+// Converter HTMLElements em Array
+// const aElements = document.getElementsByTagName("a");
+// console.log(aElements);
+// const aElementsArray = [...aElements];
+// console.log(aElementsArray);
 
 //Imprimindo atributos dos elementos recuperados...
-aElementsArray.forEach((a)=>{
-    console.log(a.href);
+// aElementsArray.forEach((a)=>{
+//     console.log(a.href);
+// });
+
+// essas duas linhas podem ser substituidas
+//const imgElements = document.getElementsByTagName("img");
+//const classElements = document.getElementsByClassName("conteudo");
+
+// e se transforma em uma só linha E CONVERTER EM ARRAY
+// const imgElements = [...document.querySelectorAll(".conteudo img")];
+
+// imgElements.foreach(( img)=>{
+//     img.setAtributte("style","width:30%;")
+// });
+
+const inputUser = document.querySelector('input[type="email"]');
+
+inputUser.addEventListener("focus",()=>{
+    inputUser.setAttribute("style", "outline-color:#ff0000");
 });
+inputUser.addEventListener("keyup",()=>{
+    const ibUser = document.querySelector("label[for='idEmail']");
+    if(inputUser.value.length < 5){
+        ibUser.innerHTML = "<span style:color:'#ff0000'>Email:(minimo de 5 caracteres)</span>"
+        inputUser.setAttribute("style", "outline-color:#ff0000");
+    }else{
+        ibUser.innerHTML = "<span style:color:'#00ff00'>Email</span>"
+        inputUser.setAttribute("style", "outline-color:#00ff00");
+    }
+    
+});
+
+//mostrar a senha
+const eyePass = document.querySelector(".fa-eye");
+
+eyePass.addEventListener("click", ()=>{
+    const inputPass = document.querySelector("#idPass");
+
+    //alterar o type
+    if(inputPass.getAttribute("type") == "password"){
+        inputPass.setAttribute("type", "text");
+        eyePass.setAttribute("class", "fa fa-eye-slash")
+
+    }else{
+        inputPass.setAttribute("type", "password");
+        eyePass.setAttribute("class", "fa fa-eye")
+    }
+})
