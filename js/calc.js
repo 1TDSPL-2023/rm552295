@@ -19,7 +19,7 @@ function resultado(visor) {
     try {
         visor.value = eval(visor.value);
     } catch (error) {
-        if(visor.value[visor.value.length] == "+" ||visor.value[visor.value.length] == "-" ||visor.value[visor.value.length] == "*" ||visor.value[visor.value.length] == "/" || ){
+        if(visor.value[visor.value.length] == "+" ||visor.value[visor.value.length] == "-" ||visor.value[visor.value.length] == "*" ||visor.value[visor.value.length] == "/"){
             visor.value.slice(visor.value.length);
         }
    }
